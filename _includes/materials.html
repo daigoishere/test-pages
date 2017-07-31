@@ -4,13 +4,23 @@ update2
 {{cat}}</br>
 {% endfor %}
 
-{% for page in site.pages %}
-<li>{{ page.categories }}</li>
-<ul>
-<li><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>
+{%
+folder_dict = {}
+for page in site.pages
 
-<li><a href="{{ page.path }}">{{ page.title }}</a></li>
-</ul>
+  folder = page.url.partition("\")
+
+  %}
+  {{folder}}
+  {%
+
+
+endfor
+%}
+
+
+{% for page in site.pages %}
+<li><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 
 <li role="separator" class="divider"></li>
