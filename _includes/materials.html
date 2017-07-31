@@ -7,7 +7,6 @@ update2
 <li> {{item.name | split: '%20' | last}} </li>
 <ul>
   {% for items in item.items %}
-    {% if items.title[0]}
     <li><a href="{{ items.url | relative_url }}">{{items.title}}</a></li>
   {% endfor %}
 </ul>
