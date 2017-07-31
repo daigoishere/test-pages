@@ -1,6 +1,11 @@
 <li class="dropdown-header">Pages</li>
 {% for page in site.pages %}
+{% for doc in page.categories %}
+  <dt>{{ doc }}</dt>
+{% endfor %}
+
 <li><a href="{{ page.url }}">{{ page.title }}</li>
+
 <li><a href="{{ page.path }}">{{ page.title }}</li>
 {% endfor %}
 
