@@ -1,6 +1,8 @@
 <li class="dropdown-header">Pages</li>
 {% for page in site.pages %}
-<li><a href="{{ page.path }}">{{ page.title + pages.path}}</li>
+<li><a href="{{ page.url }}">{{ page.title }}</li>
+<li><a href="{{ page.path }}">{{ page.title }}</li>
+
 {% endfor %}
   
 <li role="separator" class="divider"></li>
