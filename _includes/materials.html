@@ -4,7 +4,9 @@ update2
 {{cat}}</br>
 {% endfor %}
 
-{% for item in {{ site.pages | group_by_exp:"item", "item.url | remove_first: '/' | split: '/' | first"}} $}
+{% assign dict = site.pages | group_by_exp:"item", "item.url | remove_first: '/' | split: '/' | first" %}
+
+{% for item in $}
 <li> {{item}} </li>
 {% endfor %}
 
