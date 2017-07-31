@@ -7,8 +7,9 @@ update2
 <li> {{item.name}} </li>
 <ul>
   {% for items in item.items %}
-    <li> [items.title]{{ items.url | relative_url }} </li>
-  {% endfor %}
+    <li> [items.title]({{ items.url | relative_url }}) </li>
+  {% endfor
+</ul>
 {% endfor %}
 
 {% for page in site.pages %}
