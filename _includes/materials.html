@@ -4,12 +4,14 @@ update2
 {% assign dict = site.pages | group_by_exp:"item", "item.url | remove_first: '/' | split: '/' | first" %}
 
 {% for item in dict %}
-<li> {{item.name | split: '%20' | last}} </li>
-<ul>
-  {% for items in item.items %}
-    <li><a href="{{ items.url | relative_url }}">{{items.title}}</a></li>
-  {% endfor %}
-</ul>
+{% if item.name contains '%20' %}
+  <li> {{item.name | split: '%20' | last}} </li>
+  <ul>
+    {% for items in item.items %}
+      <li><a href="{{ items.url | relative_url }}">{{items.title}}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
 {% endfor %}
 
 
