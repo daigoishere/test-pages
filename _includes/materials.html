@@ -4,15 +4,15 @@ update2
 {{cat}}</br>
 {% endfor %}
 
-{% folder_dict = Hash.new() %}
+<!-- {% folder_dict = Hash.new() %}
 {% for page in site.pages %}
   {% folder = page.url.partition("\") %}
   {{folder}}
-{% endfor %}
+{% endfor %} -->
 
 
 {% for page in site.pages %}
-<li><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>
+<li><a href="{{ page.url | relative_url}}">{{ page.title }}</a></li>
 {% endfor %}
 
 <li role="separator" class="divider"></li>
