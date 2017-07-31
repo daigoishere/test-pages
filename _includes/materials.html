@@ -1,6 +1,4 @@
 <li class="dropdown-header">Pages</li>
-update2
-
 {% assign dict = site.pages | group_by_exp:"item", "item.url | remove_first: '/' | split: '/' | first" %}
 
 {% for item in dict %}
