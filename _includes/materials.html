@@ -1,10 +1,14 @@
 <li class="dropdown-header">Pages</li>
+{% for cat in site.categories %}
+cat</br>
+{% endfor %}
+
 {% for page in site.pages %}
 <li>{{ page.categories }}</li>
 <ul>
-<li><a href="{{ page.url }}">{{ page.title }}</li>
+<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 
-<li><a href="{{ page.path }}">{{ page.title }}</li>
+<li><a href="{{ page.path }}">{{ page.title }}</a></li>
 </ul>
 {% endfor %}
 
