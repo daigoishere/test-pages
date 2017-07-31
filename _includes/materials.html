@@ -7,7 +7,7 @@ update2
 {% for page in site.pages %}
 <li>{{ page.categories }}</li>
 <ul>
-<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+<li><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>
 
 <li><a href="{{ page.path }}">{{ page.title }}</a></li>
 </ul>
