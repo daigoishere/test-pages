@@ -6,7 +6,7 @@ update2
 
 {% assign dict = site.pages | group_by_exp:"item", "item.url | remove_first: '/' | split: '/' | first" %}
 
-{% for item in $}
+{% for item in dict $}
 <li> {{item}} </li>
 {% endfor %}
 
