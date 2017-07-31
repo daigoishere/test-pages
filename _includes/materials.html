@@ -1,13 +1,14 @@
 <li class="dropdown-header">Pages</li>
 update2
-{% for cat in site.collections %}
-{{cat}}</br>
-{% endfor %}
 
 {% assign dict = site.pages | group_by_exp:"item", "item.url | remove_first: '/' | split: '/' | first" %}
 
 {% for item in dict %}
-<li> {{item}} </li>
+<li> {{item.name}} </li>
+<ul>
+  {% for items in item.items %}
+    <li> [items.title]{{ items.url | relative_url }} </li>
+  {% endfor}
 {% endfor %}
 
 {% for page in site.pages %}
