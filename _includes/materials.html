@@ -4,19 +4,11 @@ update2
 {{cat}}</br>
 {% endfor %}
 
-{%
-folder_dict = {}
-for page in site.pages
-
-  folder = page.url.partition("\")
-
-  %}
+{% folder_dict = {} %}
+{% for page in site.pages %}
+  {% folder = page.url.partition("\") %}
   {{folder}}
-  {%
-
-
-endfor
-%}
+{% endfor %}
 
 
 {% for page in site.pages %}
