@@ -1,5 +1,2 @@
 sass:
   sass_dir: 'assets/stylesheets'
-
-plugins:
- - jekyll-coffeescript
