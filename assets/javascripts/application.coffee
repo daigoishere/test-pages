@@ -1,7 +1,7 @@
 ---
 ---
-{% include assets/javascript/jquery.js %}
-{% include assets/javascript/bootstrap.js %}
+{% include assets/javascripts/jquery.js %}
+{% include assets/javascripts/bootstrap.js %}
 
 
 # = require 'jquery'
