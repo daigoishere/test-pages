@@ -16,8 +16,8 @@
 	</script>
 
   <link rel="stylesheet" href="{{ '/assets/stylesheets/application.css?v=' | append: site.github.build_revision | relative_url }}">
-	<script src="{{baseurl}}/assets/javascripts/jquery.js"></script>
-	<script src="{{baseurl}}/assets/javascripts/bootstrap.js"></script>
+	<script src="{{ '/assets/javascripts/jquery.js' || relative_url }}"></script>
+	<script src="{{ '/assets/javascripts/bootstrap.js' || relative_url }}"></script>
 	<script src="{{ '/assets/javascripts/application.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
   <link rel="icon" type="image/png" href="/images/minor.png" />
