@@ -14,7 +14,7 @@ body
  */
 
 .navbar {
-	background-image:url(/images/navbar.svg);
+	background-image:url({{baseurl}}/images/navbar.svg);
 	background-size:cover;
 	sbackground-attachment:fixed;
 }
@@ -262,7 +262,7 @@ section pre code
 {
     white-space:pre;
     word-wrap:normal;
-    overflow:auto;    
+    overflow:auto;
 }
 
 .red
@@ -378,7 +378,7 @@ footer img
 		padding-top:0;
 		background-color:transparent ! important;
 	}
-	
+
 	.navbar, footer, ul.nav, #content > h1, section .video-js, iframe, #schedule-column, #comments-column, .embed
 	{
 		display:none;
@@ -405,7 +405,7 @@ footer img
     {
         resize:none;
     }
-	
+
 	#content blockquote
 	{
 		margin-left:0;
