@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require jquery.purr
 //= require bootstrap-sprockets
-//= require bootstrap
+//= require ../stylesheets/bootstrap-3.3.3.7-dist/js/bootstrap
 //= require video
 //= require best_in_place
 //= require garlic
