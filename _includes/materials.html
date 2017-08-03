@@ -2,15 +2,14 @@
 {% assign dict = site.pages | group_by_exp:"item", "item.url | remove_first: '/' | split: '/' | first" %}
 
 {% for item in dict %}
-{% if item.name contains '%20' %}
-  <li> {{item.name | split: '%20' | last}} </li>
-  <ul>
-    {% for items in item.items %}
-      <li><a href="{{ items.url | relative_url }}">{{items.title}}</a></li>
-    {% endfor %}
-  </ul>
-{% endif %}
+  {% if item.name contains '%20' %}
+    <li> {{item.name | split: '%20' | last}} </li>
+    <ul>
+      {% for items in item.items %}
+        <li><a href="{{ items.url | relative_url }}">{{items.title}}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
-
 
 <li role="separator" class="divider"></li>
