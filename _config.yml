@@ -1,4 +1,2 @@
 sass:
   sass_dir: 'assets/stylesheets'
-
-baseurl: test-pages
