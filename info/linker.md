@@ -7,7 +7,7 @@ permalink: /
 {% for item in dict %}
   {% if item.name == 'info' %}
     {% for items in item.items %}
-{% include_relative '{{items.name | url_encode}}' %}
+{% include_relative '{{items.name}}' %}
     {% endfor %}
   {% endif %}
 {% endfor %}
