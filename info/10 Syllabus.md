@@ -1,3 +1,7 @@
+---
+permalink: /
+---
+
 # Native App Studio
 
 *Edition: Spring 2017*
@@ -44,7 +48,7 @@ We'll learn about mobile software development by understanding how mobile platfo
 
 - You are expected to use **discussions** with the course's instructors and assistants to improve the technical and functional designs of all projects.
 
-- All assignments have to be handed in **individually**, but you are expected to generously help other students during the course. 
+- All assignments have to be handed in **individually**, but you are expected to generously help other students during the course.
 
 - You'll also have **written** design assignments. Attendance in class on Monday is mandatory to get credit for the design assignment of that week.
 
