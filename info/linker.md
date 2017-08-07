@@ -9,7 +9,8 @@ permalink: /
   {% if item.name == 'info' %}
     {% for items in item.items %}
       {% if items.name != '\_linker.md' %}
-        {% include_relative items.name %}
+        {{items.name}}
+        <!-- {% include_relative items.name %} -->
       {% endif %}
     {% endfor %}
   {% endif %}
