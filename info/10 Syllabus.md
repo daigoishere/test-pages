@@ -1,7 +1,3 @@
----
-permalink: /
----
-
 # Native App Studio
 
 *Edition: Spring 2017*
