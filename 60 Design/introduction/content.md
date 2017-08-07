@@ -6,7 +6,7 @@ title: Introduction
 
 Watch the video below and then read Karl Ulrich's book to get acquanted with many of the ideas and words that are important when writing and thinking about design.
 
-![videoplayer](http://d396qusza40orc.cloudfront.net/design/recoded_videos%2F1a.%20What%20is%20Design-sep2012%20%5B3e88bfde%5D%20.mp4)
+![videoplayer](https://d396qusza40orc.cloudfront.net/design/recoded_videos%2F1a.%20What%20is%20Design-sep2012%20%5B3e88bfde%5D%20.mp4)
 
 (This video is the first from a fun course [on Coursera](https://www.coursera.org/course/design) by Karl Ulrich.)
 
@@ -47,4 +47,4 @@ Finally,
 
 Aim for ~50-150 words per answer. Include a representative screenshot of the app in your document. The document has to be submitted, below, as a PDF.
 
-We will provide detailed feedback on each other's assignments in class, so be sure to bring a printed version. 
+We will provide detailed feedback on each other's assignments in class, so be sure to bring a printed version.
