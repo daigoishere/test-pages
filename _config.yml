@@ -1,2 +1,4 @@
 sass:
   sass_dir: 'assets/stylesheets'
+
+config_title: 'CS50 TEST'

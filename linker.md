@@ -1,5 +1,6 @@
 ---
 permalink: /
+title: config_title
 ---
 
 {% assign dict = site.pages | group_by_exp:"item", "item.url | remove_first: '/' | split: '/' | first" %}
