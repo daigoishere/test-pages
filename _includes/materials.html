@@ -3,11 +3,9 @@
 {% for item in dict %}
   {% if item.name contains '%20' %}
     <li class="dropdown-header"> {{item.name | split: '%20' | last}} </li>
-    <ul>
       {% for items in item.items %}
         <li><a class="" href="{{ items.url | relative_url }}">{{items.title}}</a></li>
       {% endfor %}
-    </ul>
     <li role="separator" class="divider"></li>
   {% endif %}
 {% endfor %}
