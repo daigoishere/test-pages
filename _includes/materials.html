@@ -2,10 +2,15 @@
 
 {% for item in dict %}
   {% if item.name contains '%20' %}
-    <li class="dropdown-header"> {{item.name | split: '%20' | last}} </li>
+  <li class="dropdown dropdown-accordion">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span>{{item.name | split: '%20' | last}}</a>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">  </li>
       {% for items in item.items %}
         <li><a class="" href="{{ items.url | relative_url }}">{{items.title}}</a></li>
       {% endfor %}
-    <li role="separator" class="divider"></li>
+      <li role="separator" class="divider"></li>
+    </ul>
+  </li>
   {% endif %}
 {% endfor %}
