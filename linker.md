@@ -8,6 +8,7 @@ permalink: /
   {% if item.name == 'info' %}
     {% for items in item.items %}
 {% include_relative info/{{items.name | url_escape}} %}
+{% page.title = items.name %}
     {% endfor %}
   {% endif %}
 {% endfor %}
